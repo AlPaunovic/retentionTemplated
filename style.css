@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700;800&display=swap");
+
+:root {
+  --colorGray: #333333;
+  --colorWhite: #ffffff;
+  --colorBlue: #00aabb;
+  --colorText: #4f4f4f;
+  --colorSection: #313131;
+  --fontFamily: "Mulish", sans-serif;
+  --fontSize: 16px;
+  --transition: 0.3 ease;
+  --padding: 100px 0;
+}
+/*************
+**************
+basic styles
+**************
+*************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fontFamily);
+  font-size: var(--fontSize);
+  line-height: 1.6;
+}
+ul {
+  list-style: none;
+}
+
+button {
+  background: var(--colorBlue);
+  padding: 20px 60px;
+  text-transform: uppercase;
+  color: var(--colorWhite);
+  font-weight: 400;
+  border: none;
+  transition: var(--transition);
+  margin-top: 20px;
+}
+button:hover {
+  background: var(--colorGray);
+  cursor: pointer;
+  color: var(--colorBlue);
+  font-weight: 800;
+}
+/*************
+**************
+header
+**************
+*************/
+header hgroup {
+  background-color: var(--colorGray);
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header hgroup h1 {
+  color: var(--colorWhite);
+  font-weight: 800;
+  font-size: 3rem;
+}
+header hgroup h4 {
+  color: var(--colorWhite);
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+header nav {
+  background-color: var(--colorBlue);
+  height: 20vh;
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+}
+header nav ul li {
+  margin-top: 40px;
+}
+header nav ul li a {
+  color: var(--colorWhite);
+  text-transform: uppercase;
+  margin: 30px;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  color: var(--colorText);
+  transition: var(--transition);
+  cursor: pointer;
+}
+header .active {
+  background: linear-gradient(
+    rgba(230, 230, 230, 0.5),
+    rgba(230, 230, 230, 0.5)
+  );
+  padding: 15px 30px;
+}
+
+/*************
+**************
+integer
+**************
+*************/
+.integer {
+  padding: var(--padding);
+  background-image: url(img/bg01.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+}
+.integer article:first-child {
+  flex: 0 0 35%;
+  padding: 5px;
+  margin-left: 20px;
+}
+.integer article:last-child {
+  flex: 0 0 65%;
+  padding: 5px;
+}
+.integer article:first-child h3 {
+  color: var(--colorBlue);
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+.integer article:first-child a {
+  color: var(--colorGray);
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.integer article:first-child a:hover {
+  text-decoration: none;
+}
+.integer article:first-child hr {
+  height: 1px;
+  width: 70%;
+  background: lightgray;
+  border: none;
+  margin: 10px 0;
+}
+.integer article:last-child h2 {
+  color: var(--colorBlue);
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.integer article:last-child h4 {
+  color: lightgray;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+/*************
+**************
+team
+**************
+*************/
+.team {
+  background: var(--colorSection);
+  padding: var(--padding);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.team h4 {
+  color: var(--colorWhite);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.team p {
+  color: var(--colorWhite);
+  text-align: left;
+  font-size: 0.9rem;
+  margin-top: 20px;
+  font-weight: 300;
+}
+.team article {
+  flex: 0 0 22%;
+}
+
+/*************
+**************
+follow
+**************
+*************/
+.follow {
+  padding: var(--padding);
+  background-color: var(--colorText);
+  color: var(--colorWhite);
+  display: flex;
+  justify-content: space-between;
+}
+.follow article a {
+  color: lightgrey;
+}
+.follow article {
+  flex: 0 0 33%;
+  padding: 10px;
+}
+.follow article h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+.follow article p {
+  font-weight: 300;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+}
+.follow article hr {
+  height: 0.5px;
+  background: lightgray;
+  width: 70%;
+  border: none;
+  margin: 10px;
+}
+.follow article a:hover {
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+}
+.follow article:last-child p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.follow article:last-child a {
+  font-size: 2.2rem;
+  font-weight: 400;
+  padding: 20px;
+}
+.follow article:last-child a + p {
+  margin-top: 20px;
+}
+
+/*************
+**************
+follow
+**************
+*************/
+
+footer {
+  padding: var(--padding);
+  background-color: var(--colorGray);
+}
+footer p {
+  color: var(--colorText);
+  text-align: center;
+}
